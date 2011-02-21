@@ -95,7 +95,7 @@ public class TUTwitterFetcher {
 		feedInformation = input.split(" ");
 		
 		String feedName = feedInformation[0];
-	
+		//String feedURL = feedInformation[1];
 		user = feedName;
 		
 		newFeed = new TUTwitterFeed(feedName);
@@ -135,34 +135,75 @@ public class TUTwitterFetcher {
 	}
 	
     public static void fetchTweets(TUTwitterFeed feed) {
-   
+   // 	int tweetsFromMobile = 0;
+   //		int geoNotNull=0;
+    	//int totalTweets=0;        	      
+    //	Query query = new Query();
+    //    QueryResult qrTweets = null;
     	
-    	try {
-            // gets Twitter instance with default credentials
-            Twitter twitter = new TwitterFactory().getInstance();
-            List<Status> statuses = twitter.getUserTimeline(user);
-            
-            System.out.println("Showing TU users home timeline.");
-            for (Status status : statuses) {
-                results = ("@" + status.getUser().getScreenName() + " -> " + status.getText() + " (" 
-                		+ status.getCreatedAt().toString()+ ")");
-                
-            }
-        } catch (TwitterException te) {
-            te.printStackTrace();
-            System.out.println("Failed to get timeline: " + te.getMessage());
-            System.exit(-1);
-        }
-    }
-    
-}
-    	
-    	
-    	
-    
+    	Twitter twitter = new TwitterFactory().getInstance();
+        List<Status> statuses = null;
+		try {
+			statuses = twitter.getUserTimeline(user);
+		} catch (TwitterException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        int statusesNo = 0;
+        
+        user = feed.getUser().replaceAll(" ", "").replaceAll(",", "");
 
-    
-            
-            
+    /*    
+        query.setGeoCode(new GeoLocation(location.getLatitude(), location.getLongitude()),20, Query.MILES);     */
+       // query.setQuery("?count=200&since_id=" + user); //new line added
+
+        
+        
+      //  query.setRpp(100);
+
+        int i;
+		
+        System.out.println("Showing @TU users home timeline.");
+		for (Status status : statuses) {
+		    System.out.println("@" + status.getUser().getScreenName() + " - " + status.getText()+ " " +
+		    		status.getCreatedAt().toString());
+		}
+		
+		//java.util.List<Tweet> tweets = qrTweets.getTweets();
+		//ListIterator<Tweet> li = tweets.listIterator();
+
+		while (!statuses.isEmpty()) {
+		   // statuses = statuses.addAll(i, statuses);
+		    statusesNo++;
+       /*             
+		    if (!tw.getSource().contains("web")) tweetsFromMobile++;
+		    if ((tw.getGeoLocation() != null) || (tw.getText().contains("http://myloc"))){ 
+
+
+		    	String tweetInfo =
+		    		"Date: " + tw.getCreatedAt().toString() + "\n" +
+		    		"From User: " + tw.getFromUser() + "\n" +
+		    		"From User ID: " + tw.getFromUserId() + "\n" +
+		    		"Text: " + tw.getText() + "\n" +
+		    		"Posted Using: " + tw.getSource() + "\n"; */
+
+/*
+		    		
+		    	if (tw.getGeoLocation() != null)                		
+		    		tweetInfo = tweetInfo + "Feed: " + tw.getGeoLocation().toString() + "\n";
+		    	else
+		    		tweetInfo = tweetInfo + "Feed: N/A\n";
+
+*/
+		    		
+		    //	tweetsVector.addElement(tweetInfo);
+		   // 	geoNotNull++;                
+		   // }
+		}
+        
+        results = "User tweets " + statusesNo; /*+ "\nNon web tweets " + tweetsFromMobile + "\nTweets with geocode " + geoNotNull; */
+    }
+
+}
 
 

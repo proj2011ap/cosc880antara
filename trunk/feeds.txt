@@ -1,21 +1,21 @@
-TheTowerlight; http://twitter.com/TheTowerlight
-TowsonUNews; http://twitter.com/towsonunews	
-TowsonTigers; http://twitter.com/TowsonTigers
-TowsonTigerAD; http://twitter.com/TowsonTigerAD
-TowsonPatch; http://twitter.com/towsonpatch
-UBTowsonMBA; http://twitter.com/ubtowsonmba
-TowsonSGA; http://twitter.com/TowsonSGA	
-globalquad; http://twitter.com/globalquad/towson-university
-TowsonU; http://twitter.com/towsonu
-TUCollofBusEcon; http://twitter.com/TUCollofBusEcon
-TowsonUAlumni; http://twitter.com/TowsonUAlumni
-TowsonGlobal; http://twitter.com/TowsonGlobal
-TUinCommunity; http://twitter.com/TUinCommunity
-TUOutreach; http://twitter.com/TUOutreach
-towsonstudent; http://twitter.com/towsonstudent
-TowsonMensBball; http://twitter.com/TowsonMensBball
-TUBlackboard; http://twitter.com/TUBlackboard
-tumusic; https://twitter.com/tumusic
-TowsonStudioArt; http://twitter.com/TowsonStudioArt
-TowsonArtsClctv; http://twitter.com/TowsonArtsClctv
-TUCampusRec; http://twitter.com/tucampusrec
+TowsonTigers
+TowsonTigerAD
+TheTowerlight
+TowsonUNews	
+TowsonPatch
+UBTowsonMBA
+TowsonSGA	
+globalquad
+TowsonU
+TUCollofBusEcon
+TowsonUAlumni
+TowsonGlobal
+TUinCommunity
+TUOutreach
+towsonstudent
+TowsonMensBball
+TUBlackboard
+TowsonStudioArt 
+TowsonArtsClctv 
+TUCampusRec
+tumusic
