@@ -14,15 +14,14 @@ import java.util.logging.Logger;
 import twitter4j.*;
 
 public class TUTwitterFetcher3 {
+	private static String user;
+    private static BufferedReader reader;
+    private static Twitter twitter;
+    private static Vector feeds;
+    private static Vector tweetsVector;
+    private static String results;
         
-        private static String user;
-        private static BufferedReader reader;
-        private static Twitter twitter;
-        private static Vector feeds;
-        private static Vector tweetsVector;
-        private static String results;
-        
-        public static void main(String[] args) {
+    public static void main(String[] args) {
        user = null;       
        feeds = new Vector();
        tweetsVector = new Vector();
@@ -54,13 +53,13 @@ public class TUTwitterFetcher3 {
         /**
          * 
          */     
-        private static void fetchUserTweets() {
+     private static void fetchUserTweets() {
                 for (int i = 0; i < feeds.size(); i++){
                         
                         fetchTweets((TUTwitterFeed) feeds.get(i));
-                      //  writeFile();
+                        writeFile();
                         tweetsVector.clear();
-                        System.out.println("********************************************************** ");
+                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.println("Showing next @TU users home timeline...wait few moments....");
                         try {
                                 Thread.sleep(300000);
@@ -70,7 +69,7 @@ public class TUTwitterFetcher3 {
                 }
         }
 
-        private static void readFile(String file){
+     private static void readFile(String file){
                 String input = null;
                 //int inputNo = 0;
                 
@@ -91,7 +90,7 @@ public class TUTwitterFetcher3 {
         }
 
         
-        private static void processFeed(String input){
+     private static void processFeed(String input){
                 TUTwitterFeed newFeed; 
                 String[] feedInformation = null;
                 
@@ -107,37 +106,38 @@ public class TUTwitterFetcher3 {
 
         }
 
-
-/*
-           
-        private static void writeFile(){
+ 
+     private static void writeFile(){
                 try{
                         
                         Date currentTime = new Date();
-                        String outputFilename = user + "_" + currentTime.toString().replaceAll(" ", "_").replaceAll(":", "") + ".txt"; 
+                        String outputFilename = user + "_" + currentTime.toString().replaceAll(" ", 
+                                                                 "_").replaceAll(":", "") + ".txt"; 
                  
                         FileWriter fstream = new FileWriter(outputFilename);
                         BufferedWriter out = new BufferedWriter(fstream);
                         
-                        out.write(results);     
+                       // out.write(results);     
+                        //out.write("\n");
+                        
+                        out.write("..........................*****************************..............................\n");
                         out.write("\n");
-                        
-                        out.write("******************************************************\n");
-                        
                         for (int i = 0; i < tweetsVector.size(); i++){
                                 out.write(tweetsVector.get(i).toString() + "\n");
-                                out.write("******************************************************\n");
+                                out.write("************************************************************************\n");
                         }
-                        
+                        out.write(results);     
+                        out.write("\n");
                         out.write("\n");                
                         out.close();
                         
                 }catch (Exception e){//Catch exception if any
                         System.err.println("Error: " + e.getMessage());
                 }
-        } */
+        } 
         
-    public static void fetchTweets(TUTwitterFeed feed) {
+        
+     public static void fetchTweets(TUTwitterFeed feed) {
    
         
         Twitter twitter = new TwitterFactory().getInstance();
@@ -148,34 +148,28 @@ public class TUTwitterFetcher3 {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                 }
-        int statusesNo = 0;
-        
+                
         user = feed.getUser().replaceAll(" ", "").replaceAll(",", "");
 
-    /*    
-        query.setGeoCode(new GeoLocation(location.getLatitude(), location.getLongitude()),20, Query.MILES);     */
-       // query.setQuery("?count=200&since_id=" + user); //new line added
-
-        
+    
+       // query.setQuery("?count=200&since_id=" + user); //new line added       
         
       //  query.setRpp(100);
 
-      //  int i;
-                
+      
+               
         System.out.println("Getting tweets for " + user + "...\n");
                 for (Status status : statuses) {
-                    System.out.println("@" + status.getUser().getScreenName() + " - " + status.getText()+ ".  " +
-                                status.getCreatedAt().toString());
+                    results = ("@" + status.getUser().getScreenName() + " - " + 
+                                            status.getText()+ ".  " + status.getCreatedAt().toString());
+                   // results = results + ....;
+                    tweetsVector.addElement(results);
                 }
                 
                 //java.util.List<Tweet> tweets = qrTweets.getTweets();
                 //ListIterator<Tweet> li = tweets.listIterator();
         
-                /*             while (!statuses.isEmpty() && feed != null) {
-                        // statuses = statuses.addAll(i, statuses);
-                        statusesNo++;
-                       results = "User tweets " + statusesNo+feed;
-                    
+                /*                              
                     if (!tw.getSource().contains("web")) tweetsFromMobile++;
                     if ((tw.getGeoLocation() != null) || (tw.getText().contains("http://myloc"))){ 
 
@@ -185,21 +179,18 @@ public class TUTwitterFetcher3 {
                                 "From User: " + tw.getFromUser() + "\n" +
                                 "From User ID: " + tw.getFromUserId() + "\n" +
                                 "Text: " + tw.getText() + "\n" +
-                                "Posted Using: " + tw.getSource() + "\n"; */
-
-/*
+                                "Posted Using: " + tw.getSource() + "\n"; 
+                                
                                 
                         if (tw.getGeoLocation() != null)                                
                                 tweetInfo = tweetInfo + "Feed: " + tw.getGeoLocation().toString() + "\n";
                         else
-                                tweetInfo = tweetInfo + "Feed: N/A\n";
-
-*/
+                                tweetInfo = tweetInfo + "Feed: N/A\n";*/
                                 
                     //  tweetsVector.addElement(tweetInfo);
                    //   geoNotNull++;                
                    // }
-                }
+                }         
         
         //results = "User tweets " + statusesNo; /*+ "\nNon web tweets " + tweetsFromMobile + "\nTweets with geocode " + geoNotNull; */
     }
