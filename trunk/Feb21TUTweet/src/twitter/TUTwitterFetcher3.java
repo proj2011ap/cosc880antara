@@ -32,11 +32,11 @@ public class TUTwitterFetcher3 {
                    System.out.println ("Too many arguments.");
            else if (args.length > 0){
                    readFile(args[0]);              
-                   for(int i = 0; i < 5; i++){
+                   for(int i = 0; i < 5; i++){ //do I need to change this loop iteration?
                            fetchUserTweets();
                            try {
                                    System.out.println("Sleeping iteration" + i);
-                                   Thread.sleep(360000);
+                                   Thread.sleep(43200000);//sleeps for 12 hrs
                            } catch (InterruptedException e) {
                                    e.printStackTrace();
                            }
@@ -58,11 +58,11 @@ public class TUTwitterFetcher3 {
                         
                         fetchTweets((TUTwitterFeed) feeds.get(i));
                         writeFile();
-                        tweetsVector.clear();
+                     // tweetsVector.clear();
                         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.println("Showing next @TU users home timeline...wait few moments....");
                         try {
-                                Thread.sleep(300000);
+                                Thread.sleep(30000);
                         } catch (InterruptedException e) {
                                 e.printStackTrace();
                         }
@@ -111,22 +111,23 @@ public class TUTwitterFetcher3 {
                 try{
                         
                         Date currentTime = new Date();
-                        String outputFilename = user + "_" + currentTime.toString().replaceAll(" ", 
-                                                                 "_").replaceAll(":", "") + ".txt"; 
+                //        String outputFilename = user + "_" + currentTime.toString().replaceAll(" ", 
+                  //                                               "_").replaceAll(":", "") + ".txt"; 
                  
-                        FileWriter fstream = new FileWriter(outputFilename);
+                        FileWriter fstream = new FileWriter("outputFile");
                         BufferedWriter out = new BufferedWriter(fstream);
                         
                        // out.write(results);     
                         //out.write("\n");
                         
-                        out.write("..........................*****************************..............................\n");
+                        out.write("Current updates for all the TU users"+" "+currentTime.toString());
+                        out.write("\n");
                         out.write("\n");
                         for (int i = 0; i < tweetsVector.size(); i++){
                                 out.write(tweetsVector.get(i).toString() + "\n");
                                 out.write("************************************************************************\n");
                         }
-                        out.write(results);     
+                    //    out.write(results);     
                         out.write("\n");
                         out.write("\n");                
                         out.close();
@@ -150,49 +151,18 @@ public class TUTwitterFetcher3 {
                 }
                 
         user = feed.getUser().replaceAll(" ", "").replaceAll(",", "");
-
     
-       // query.setQuery("?count=200&since_id=" + user); //new line added       
-        
-      //  query.setRpp(100);
-
-      
-               
+                      
         System.out.println("Getting tweets for " + user + "...\n");
                 for (Status status : statuses) {
                     results = ("@" + status.getUser().getScreenName() + " - " + 
                                             status.getText()+ ".  " + status.getCreatedAt().toString());
                    // results = results + ....;
                     tweetsVector.addElement(results);
-                }
-                
-                //java.util.List<Tweet> tweets = qrTweets.getTweets();
-                //ListIterator<Tweet> li = tweets.listIterator();
+                }                
+               
+           }           
         
-                /*                              
-                    if (!tw.getSource().contains("web")) tweetsFromMobile++;
-                    if ((tw.getGeoLocation() != null) || (tw.getText().contains("http://myloc"))){ 
-
-
-                        String tweetInfo =
-                                "Date: " + tw.getCreatedAt().toString() + "\n" +
-                                "From User: " + tw.getFromUser() + "\n" +
-                                "From User ID: " + tw.getFromUserId() + "\n" +
-                                "Text: " + tw.getText() + "\n" +
-                                "Posted Using: " + tw.getSource() + "\n"; 
-                                
-                                
-                        if (tw.getGeoLocation() != null)                                
-                                tweetInfo = tweetInfo + "Feed: " + tw.getGeoLocation().toString() + "\n";
-                        else
-                                tweetInfo = tweetInfo + "Feed: N/A\n";*/
-                                
-                    //  tweetsVector.addElement(tweetInfo);
-                   //   geoNotNull++;                
-                   // }
-                }         
-        
-        //results = "User tweets " + statusesNo; /*+ "\nNon web tweets " + tweetsFromMobile + "\nTweets with geocode " + geoNotNull; */
     }
 
 
