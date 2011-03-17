@@ -31,22 +31,18 @@ public class TUTwitterFetcher3 {
            if (args.length > 1)
                    System.out.println ("Too many arguments.");
            else if (args.length > 0){
-                   readFile(args[0]);              
-                   for(int i = 0; i < 5; i++){ //do I need to change this loop iteration?
-                           fetchUserTweets();
+                   readFile(args[0]);
+                   int i = 0;
+                   while(true){ //do I need to change this loop iteration?
+                       i++;    
+                	   fetchUserTweets();
                            try {
                                    System.out.println("Sleeping iteration" + i);
                                    Thread.sleep(43200000);//sleeps for 12 hrs
                            } catch (InterruptedException e) {
                                    e.printStackTrace();
                            }
-                   }
-           
-                   try {
-                           reader.close();
-                           } catch (IOException e) {
-                                   e.printStackTrace();
-                                   }    
+                   }    
                            }
            }
 
@@ -155,9 +151,12 @@ public class TUTwitterFetcher3 {
                       
         System.out.println("Getting tweets for " + user + "...\n");
                 for (Status status : statuses) {
-                    results = ("@" + status.getUser().getScreenName() + " - " + 
-                                            status.getText()+ ".  " + status.getCreatedAt().toString());
+                	if(status.getText().contains("http://"))
+                	{
+                		results = ("@" + status.getUser().getScreenName() + " - " + 
+                                        status.getText()+ ".  " + status.getCreatedAt().toString());
                    // results = results + ....;
+                	}
                     tweetsVector.addElement(results);
                 }                
                
