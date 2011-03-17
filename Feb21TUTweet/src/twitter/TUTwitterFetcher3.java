@@ -153,8 +153,9 @@ public class TUTwitterFetcher3 {
                 for (Status status : statuses) {
                 	if(status.getText().contains("http://"))
                 	{
-                		results = ("@" + status.getUser().getScreenName() + " - " + 
-                                        status.getText()+ ".  " + status.getCreatedAt().toString());
+                		results = ("UserName"+" = "+"@" + status.getUser().getScreenName() + "\n " +
+                				    "Date/Time" + " = "+ status.getCreatedAt().toString()+
+                                       " \n " + "Text"+" = "+status.getText()+ ".  " );
                    // results = results + ....;
                 	}
                     tweetsVector.addElement(results);
