@@ -4,7 +4,6 @@ TowsonTigerAD
 TowsonPatch 
 UBTowsonMBA
 TowsonSGA 
-globalquad
 TowsonU 
 TUCollofBusEcon
 TowsonUAlumni 
