@@ -156,7 +156,7 @@ public class TUTwitterFetcher3 {
                 		results = (" UserName = " + "@" + status.getUser().getScreenName() + "\n " +
                 				    "Date/Time = " + status.getCreatedAt().toString()+
                                        " \n " + "Text = "+ status.getText()+ ".  " ) +" \n "+ 
-                                       "Link = " + status.getText().contains("http://");
+                                       "Link = " + status.getText().contains("http://") + "\n" + "Address = " ;
                 		
                 		tweetsVector.addElement(results);                   
                 	}
