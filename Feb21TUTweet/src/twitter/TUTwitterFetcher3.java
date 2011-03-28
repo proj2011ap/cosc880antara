@@ -58,7 +58,7 @@ public class TUTwitterFetcher3 {
                         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.println("Showing next @TU users home timeline...wait few moments....");
                         try {
-                                Thread.sleep(30000);
+                                Thread.sleep(300);
                         } catch (InterruptedException e) {
                                 e.printStackTrace();
                         }
@@ -133,7 +133,20 @@ public class TUTwitterFetcher3 {
                 }
         } 
         
-        
+     public static String getLink(String text){
+    	 String link = "";
+    	 int startIndex = text.indexOf("http://");    	 
+    	 text = text.substring(startIndex);    	 
+    	 int spaceIndex = text.indexOf(" ");
+    	     	 
+    	 if (spaceIndex != -1) 
+    	 	link = text.substring(0, spaceIndex);   
+    	 else
+    		 link = text;
+    	 
+    	 return link;
+     }
+     
      public static void fetchTweets(TUTwitterFeed feed) {
    
         
@@ -156,7 +169,7 @@ public class TUTwitterFetcher3 {
                 		results = (" UserName = " + "@" + status.getUser().getScreenName() + "\n " +
                 				    "Date/Time = " + status.getCreatedAt().toString()+
                                        " \n " + "Text = "+ status.getText()+ ".  " ) +" \n "+ 
-                                       "Link = " + status.getText().contains("http://") + "\n" + "Address = " ;
+                                       "Link = " + status.getText().contains("http://") + "\n" + " Address = " + getLink(status.getText());
                 		
                 		tweetsVector.addElement(results);                   
                 	}
