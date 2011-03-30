@@ -171,14 +171,16 @@ public class TUTwitterFetcher3 {
                                        " \n " + "Text = "+ status.getText()+ ".  " ) +" \n "+ 
                                        "Link = " + status.getText().contains("http://") + "\n" + " Address = " + getLink(status.getText());
                 		
-                		tweetsVector.addElement(results);                   
+                		//tweetsVector.addElement(results);                   
                 	}
                 	else
+                	{                		
                 		results = " UserName = " + "@" + status.getUser().getScreenName() + "\n " +
             				    "Date/Time = " + status.getCreatedAt().toString()+
                                    " \n " + "Text = "+ status.getText()+ ".  "  +" \n "+ 
                                    "Link = " + status.getText().contains("http://") + "\n" + " Address = " + " " ;
-            		
+                	}
+                	
             		tweetsVector.addElement(results);   
                    // tweetsVector.addElement(results);
                 }                
