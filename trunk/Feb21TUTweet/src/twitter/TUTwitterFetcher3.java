@@ -107,9 +107,7 @@ public class TUTwitterFetcher3 {
                 try{
                         
                         Date currentTime = new Date();
-                //        String outputFilename = user + "_" + currentTime.toString().replaceAll(" ", 
-                  //                                               "_").replaceAll(":", "") + ".txt"; 
-                 
+                                 
                         FileWriter fstream = new FileWriter("outputFile");
                         BufferedWriter out = new BufferedWriter(fstream);
                         
@@ -166,19 +164,21 @@ public class TUTwitterFetcher3 {
                 for (Status status : statuses) {
                 	if(status.getText().contains("http://"))
                 	{
-                		results = (" UserName = " + "@" + status.getUser().getScreenName() + "\n " +
-                				    "Date/Time = " + status.getCreatedAt().toString()+
-                                       " \n " + "Text = "+ status.getText()+ ".  " ) +" \n "+ 
-                                       "Link = " + status.getText().contains("http://") + "\n" + " Address = " + getLink(status.getText());
+                		results = (" UserName = " + "@" + status.getUser().getScreenName() + " \n " +
+                				   "Date/Time = " + status.getCreatedAt().toString()+ " \n " + 
+                				   "Text = "+ status.getText()+ ".  " ) + " \n " + 
+                                   "Link = " + status.getText().contains("http://") + " \n " +
+                                   "Address = " + getLink(status.getText());
                 		
                 		//tweetsVector.addElement(results);                   
                 	}
                 	else
                 	{                		
                 		results = " UserName = " + "@" + status.getUser().getScreenName() + "\n " +
-            				    "Date/Time = " + status.getCreatedAt().toString()+
-                                   " \n " + "Text = "+ status.getText()+ ".  "  +" \n "+ 
-                                   "Link = " + status.getText().contains("http://") + "\n" + " Address = " + " " ;
+            		              "Date/Time = " + status.getCreatedAt().toString()+ " \n " +
+            		              "Text = "+ status.getText()+ ".  "  + " \n " + 
+                                  "Link = " + status.getText().contains("http://") + " \n " +
+                                  "Address = " + " " ;
                 	}
                 	
             		tweetsVector.addElement(results);   
