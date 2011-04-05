@@ -5,12 +5,13 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Date;
+//import java.util.Date;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.sql.*;
 import twitter4j.*;
 
 public class TUTwitterFetcher3 {
@@ -20,12 +21,22 @@ public class TUTwitterFetcher3 {
     private static Vector feeds;
     private static Vector tweetsVector;
     private static String results;
-        
+    private static DB db;   
+    
+    private static String username;
+    private static String date;
+    private static String text;
+    private static String address;
+    
     public static void main(String[] args) {
        user = null;       
        feeds = new Vector();
        tweetsVector = new Vector();
        twitter = new TwitterFactory().getInstance();
+       
+       db = new DB();
+       db.dbConnect("jdbc:jtds:sqlserver://localhost:1433/TUUsersDB","sa","antarapal"); 
+       
                 
        //  Check to make sure only a single file argument was provided
            if (args.length > 1)
@@ -53,7 +64,8 @@ public class TUTwitterFetcher3 {
                 for (int i = 0; i < feeds.size(); i++){
                         
                         fetchTweets((TUTwitterFeed) feeds.get(i));
-                        writeFile();
+                   //     writeFile();
+                        db.insertData(username, date, text, address);
                      // tweetsVector.clear();
                         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.println("Showing next @TU users home timeline...wait few moments....");
@@ -102,7 +114,7 @@ public class TUTwitterFetcher3 {
 
         }
 
- 
+ /*
      private static void writeFile(){
                 try{
                         
@@ -130,6 +142,7 @@ public class TUTwitterFetcher3 {
                         System.err.println("Error: " + e.getMessage());
                 }
         } 
+        */
         
      public static String getLink(String text){
     	 String link = "";
@@ -162,27 +175,31 @@ public class TUTwitterFetcher3 {
                       
         System.out.println("Getting tweets for " + user + "...\n");
                 for (Status status : statuses) {
+                //	String username;
+                	//String date;
+                	//String text;
+                	//String address;
+                	
                 	if(status.getText().contains("http://"))
                 	{
-                		results = (" UserName = " + "@" + status.getUser().getScreenName() + " \n " +
-                				   "Date/Time = " + status.getCreatedAt().toString()+ " \n " + 
-                				   "Text = "+ status.getText()+ ".  " ) + " \n " + 
-                                   "Link = " + status.getText().contains("http://") + " \n " +
-                                   "Address = " + getLink(status.getText());
+                		username ="@" + status.getUser().getScreenName();
+                		date = status.getCreatedAt().toString();
+                		text = status.getText();
+                		address = getLink(status.getText());                		
                 		
                 		//tweetsVector.addElement(results);                   
                 	}
                 	else
                 	{                		
-                		results = " UserName = " + "@" + status.getUser().getScreenName() + "\n " +
-            		              "Date/Time = " + status.getCreatedAt().toString()+ " \n " +
-            		              "Text = "+ status.getText()+ ".  "  + " \n " + 
-                                  "Link = " + status.getText().contains("http://") + " \n " +
-                                  "Address = " + " " ;
+                		username ="@" + status.getUser().getScreenName();
+                		date = status.getCreatedAt().toString();
+                		text = status.getText();
+                		address = "";
                 	}
                 	
+                //	db.insertData(username, date, text, address);
             		tweetsVector.addElement(results);   
-                   // tweetsVector.addElement(results);
+                   
                 }                
                
            }           
@@ -190,5 +207,88 @@ public class TUTwitterFetcher3 {
     }
 
 
+/*
+ * http://www.java-tips.org/other-api-tips/jdbc/how-to-insert-data-into-database-tables-with-the-help-of-2.html
+The example below inserts data into an SQL server's database tables.
+
+import java.sql.*;
+
+public class insertTableData
+{
+    public static void main(String[] args) 
+    {
+        DB db = new DB();
+        Connection conn=db.dbConnect("jdbc:jtds:sqlserver://localhost:1433/tempdb","sa","");
+        db.insertData(conn);
+    }
+}
+
+class DB
+{
+    public DB() {}
+
+    public Connection dbConnect(String db_connect_string,
+  String db_userid,String db_password)
+    {
+        try
+        {
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(
+    		db_connect_string,db_userid,db_password);
+            System.out.println("connected");
+            return conn;
+            
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public void insertData(Connection conn)
+    {
+        Statement stmt;
+        try
+        {
+            stmt = conn.createStatement();
+            stmt.executeUpdate("insert into cust_profile " +
+                 "values('name1', 'add1','city1','state1','country1')");
+    
+            stmt.executeUpdate("insert into cust_profile " +
+                 "values('name2', 'add2','city2','state2','country2')");
+
+            stmt.executeUpdate("insert into cust_profile " +
+                 "values('name3', 'add3','city3','state3','country3')");
+    
+            stmt.close();
+            conn.close();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+};
+*/
 
 
+/* http://www.exampledepot.com/egs/java.sql/InsertPs.html
+ * try {
+    // Prepare a statement to insert a record
+    String sql = "INSERT INTO my_table (col_string) VALUES(?)";
+    PreparedStatement pstmt = connection.prepareStatement(sql);
+
+    // Insert 10 rows
+    for (int i=0; i<10; i++) {
+        // Set the value
+        pstmt.setString(1, "row "+i);
+
+        // Insert the row
+        pstmt.executeUpdate();
+    }
+} catch (SQLException e) {
+}
+
+
+*/
