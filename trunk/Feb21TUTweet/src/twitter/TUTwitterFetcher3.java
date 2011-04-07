@@ -65,7 +65,7 @@ public class TUTwitterFetcher3 {
                         
                         fetchTweets((TUTwitterFeed) feeds.get(i));
                    //     writeFile();
-                        db.insertData(username, date, text, address);
+                     //   db.insertData(username, date, text, address);
                      // tweetsVector.clear();
                         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                         System.out.println("Showing next @TU users home timeline...wait few moments....");
@@ -182,7 +182,7 @@ public class TUTwitterFetcher3 {
                 	
                 	if(status.getText().contains("http://"))
                 	{
-                		username ="@" + status.getUser().getScreenName();
+                		username = status.getUser().getScreenName();
                 		date = status.getCreatedAt().toString();
                 		text = status.getText();
                 		address = getLink(status.getText());                		
@@ -191,13 +191,13 @@ public class TUTwitterFetcher3 {
                 	}
                 	else
                 	{                		
-                		username ="@" + status.getUser().getScreenName();
+                		username = status.getUser().getScreenName();
                 		date = status.getCreatedAt().toString();
                 		text = status.getText();
                 		address = "";
                 	}
                 	
-                //	db.insertData(username, date, text, address);
+                	db.insertData(username, date, text, address);
             		tweetsVector.addElement(results);   
                    
                 }                

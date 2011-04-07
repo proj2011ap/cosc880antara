@@ -34,17 +34,25 @@ public class DB {
 	    try
 	    {
 	        stmt = conn.createStatement();
-	        stmt.executeUpdate("insert into dbo.TUTwitter " +
-	             "values('username' , 'date' , 'text' , 'address')");
+	        text = text.replaceAll("'", "'''");
+	        String cmd = "insert into dbo.TUTwitter values('" + username + "', '" + date + "', '" + text + "', '" + address + "');";
+	        
+	        System.out.println(cmd);
+	        stmt.setEscapeProcessing(true);
+	        
+	        stmt.executeUpdate(cmd);
+	        
+	        
 	
 	        //stmt.executeUpdate("insert into cust_profile " +
        // "values('name1', 'add1','city1','state1','country1')");
 	        stmt.close();
-	        conn.close();
+	        
 	    }
 	    catch (Exception e)
 	    {
 	        e.printStackTrace();
+	        
 	    }
 	}
 }
