@@ -28,14 +28,15 @@ public class DB {
 	}
 	
 
-	public void insertData(String username, String date, String text, String address)
+	public void insertData(int id, String username, String date, String text, String address)
 	{
 	    Statement stmt;
 	    try
 	    {
 	        stmt = conn.createStatement();
 	        text = text.replaceAll("'", "'''");
-	        String cmd = "insert into dbo.TUTwitter values('" + username + "', '" + date + "', '" + text + "', '" + address + "');";
+	       // text = text.replaceAll("'", " ");
+	        String cmd = "insert into dbo.TUTwitter values('" + id + "', '" + username + "', '" + date + "', '" + text + "', '" + address + "');";
 	        
 	        System.out.println(cmd);
 	        stmt.setEscapeProcessing(true);

@@ -23,6 +23,7 @@ public class TUTwitterFetcher3 {
     private static String results;
     private static DB db;   
     
+    private static int id;
     private static String username;
     private static String date;
     private static String text;
@@ -197,7 +198,7 @@ public class TUTwitterFetcher3 {
                 		address = "";
                 	}
                 	
-                	db.insertData(username, date, text, address);
+                	db.insertData(id, username, date, text, address);
             		tweetsVector.addElement(results);   
                    
                 }                
@@ -207,88 +208,3 @@ public class TUTwitterFetcher3 {
     }
 
 
-/*
- * http://www.java-tips.org/other-api-tips/jdbc/how-to-insert-data-into-database-tables-with-the-help-of-2.html
-The example below inserts data into an SQL server's database tables.
-
-import java.sql.*;
-
-public class insertTableData
-{
-    public static void main(String[] args) 
-    {
-        DB db = new DB();
-        Connection conn=db.dbConnect("jdbc:jtds:sqlserver://localhost:1433/tempdb","sa","");
-        db.insertData(conn);
-    }
-}
-
-class DB
-{
-    public DB() {}
-
-    public Connection dbConnect(String db_connect_string,
-  String db_userid,String db_password)
-    {
-        try
-        {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(
-    		db_connect_string,db_userid,db_password);
-            System.out.println("connected");
-            return conn;
-            
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    public void insertData(Connection conn)
-    {
-        Statement stmt;
-        try
-        {
-            stmt = conn.createStatement();
-            stmt.executeUpdate("insert into cust_profile " +
-                 "values('name1', 'add1','city1','state1','country1')");
-    
-            stmt.executeUpdate("insert into cust_profile " +
-                 "values('name2', 'add2','city2','state2','country2')");
-
-            stmt.executeUpdate("insert into cust_profile " +
-                 "values('name3', 'add3','city3','state3','country3')");
-    
-            stmt.close();
-            conn.close();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-};
-*/
-
-
-/* http://www.exampledepot.com/egs/java.sql/InsertPs.html
- * try {
-    // Prepare a statement to insert a record
-    String sql = "INSERT INTO my_table (col_string) VALUES(?)";
-    PreparedStatement pstmt = connection.prepareStatement(sql);
-
-    // Insert 10 rows
-    for (int i=0; i<10; i++) {
-        // Set the value
-        pstmt.setString(1, "row "+i);
-
-        // Insert the row
-        pstmt.executeUpdate();
-    }
-} catch (SQLException e) {
-}
-
-
-*/
