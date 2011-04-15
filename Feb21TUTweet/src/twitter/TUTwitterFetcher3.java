@@ -23,7 +23,6 @@ public class TUTwitterFetcher3 {
     private static String results;
     private static DB db;   
     
-    private static int id;
     private static String username;
     private static String date;
     private static String text;
@@ -191,14 +190,14 @@ public class TUTwitterFetcher3 {
                 		//tweetsVector.addElement(results);                   
                 	}
                 	else
-                	{                		
+                	{ 
                 		username = status.getUser().getScreenName();
                 		date = status.getCreatedAt().toString();
                 		text = status.getText();
                 		address = "";
                 	}
                 	
-                	db.insertData(id, username, date, text, address);
+                	db.insertData(username, date, text, address);
             		tweetsVector.addElement(results);   
                    
                 }                
