@@ -1,6 +1,11 @@
 connected
 Getting tweets for TheTowerlight...
 
+insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 17 13:09:46 EDT 2011', 'RT @DrSpaulding: Visiting @TheTowerlight today. I always walk away impressed with these students and the thoughtful editorial decisions  ...', '');
+insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sat Apr 16 22:22:17 EDT 2011', 'WORD on the STREET: What is your favorite part about SGA election season? (Answers in Print!) #wots', '');
+insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sat Apr 16 16:55:07 EDT 2011', 'UPDATE: Junior forward Philmore to leave Towson program http://bit.ly/dHMESF #Towson #CAA', 'http://bit.ly/dHMESF');
+insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sat Apr 16 16:40:22 EDT 2011', 'WORD on the STREET: What is your favorite part about TU during SGA election season? (Answers in Print!) #wots', '');
+insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sat Apr 16 14:06:42 EDT 2011', 'A tornado watch is in effect throughout Baltimore County until 9 p.m. http://bit.ly/ibYIg3 #towson', 'http://bit.ly/ibYIg3');
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Thu Apr 14 20:31:08 EDT 2011', 'RT @ginferra: Balancing babies and books, a new article in @TheTowerlight, and an editor''s pick on @NTbmore: http://ow.ly/4AtoZ', 'http://ow.ly/4AtoZ');
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Thu Apr 14 16:08:07 EDT 2011', 'http://wp.me/pYWJI-9MW Nwankwo, Philmore may leave basketball program. #CAA #Towson', 'http://wp.me/pYWJI-9MW');
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Thu Apr 14 14:45:50 EDT 2011', 'http://bit.ly/h7Dfv6 Towson window washer taken to Shock Trauma after 10th story accident', 'http://bit.ly/h7Dfv6');
@@ -16,15 +21,12 @@ insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Mon Apr 11 17:28:04 
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Mon Apr 11 15:22:34 EDT 2011', 'Towerlight POLL: Will Far East Movement be a good act for Tigerfest? 56% = NO | 44% = YES  http://bit.ly/eG0qMC', 'http://bit.ly/eG0qMC');
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Mon Apr 11 14:52:23 EDT 2011', 'TODAY: SGA candidates prep for election | Far East Movement at Tigerfest | Alcohol tax on rise | Dance team victory http://thetowerlight.com', 'http://thetowerlight.com');
 insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Mon Apr 11 14:09:39 EDT 2011', '@towsonSGA Candidates gear up for throwdown http://bit.ly/gYdpPa Split ticket may form new executive board', 'http://bit.ly/gYdpPa');
-insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 10 14:30:08 EDT 2011', 'UPDATE:http://bit.ly/fTbgbw LA-based hip-hop group to perform at #Tigerfest, but NOT as headlining artist. Headliner still to be determined.', 'http://bit.ly/fTbgbw');
-insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 10 14:00:35 EDT 2011', '@fareastmovement Media inquiry for an upcoming show in Towson, MD for your Free Wired tour. Looking to get in touch. DM us if you can.', '');
-insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 10 01:26:13 EDT 2011', 'LA hip-hop group to perform at Johnny Unitas Stadium May 6 http://bit.ly/eLtQc5', 'http://bit.ly/eLtQc5');
-insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 10 00:38:27 EDT 2011', 'The Towerlight » Far East Movement to perform at Johnny Unitas Stadium May 6 http://bit.ly/eLtQc5', 'http://bit.ly/eLtQc5');
-insert into dbo.TUTwitter values(NewID(), 'TheTowerlight', 'Sun Apr 10 00:25:41 EDT 2011', 'Far East Movement to headline Tigerfest 2011, according to hip-hop group event list. http://bit.ly/fBzqM7', 'http://bit.ly/fBzqM7');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonUNews...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Fri Apr 15 09:58:10 EDT 2011', '@CaitlinCNN Tu researches concussions. Read the story. http://bit.ly/faVk4f', 'http://bit.ly/faVk4f');
+insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Fri Apr 15 09:55:11 EDT 2011', 'TU researches concussions. See the WJZ story.  http://bit.ly/faVk4f', 'http://bit.ly/faVk4f');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Thu Apr 14 15:18:38 EDT 2011', 'WJZ covers concussion research at TU http://baltimore.cbslocal.com/2011/04/14/66379/', 'http://baltimore.cbslocal.com/2011/04/14/66379/');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Thu Apr 14 15:03:19 EDT 2011', 'Watch WJZ at 4 & 6 today, 4/14. Covering concussions & DNA research. USA Today was here 2!', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Thu Apr 14 14:53:04 EDT 2011', 'Office of Ben Cardin hosts Health Care Career Expo, Saturday 4/16, 9 am, UU.  Reservation required. HCCExpobaltimore@cardin.senate.gov', '');
@@ -43,12 +45,22 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Fri Apr 08 09:44:29 ED
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Fri Apr 08 09:08:03 EDT 2011', 'All Victorious Ocean:Epic Story Of A Woman’s Journey 2 Enlightenment.Legend of Tantric yogini Tsogyal.  Sat, 4/9, 8 p.m. Ctr for the Arts.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Thu Apr 07 11:49:17 EDT 2011', 'The Hebrew Bible’s Use of Abstract Images to Depict the Divine. Dr. Theodore Lewis, 2day, 4/7, 5:30 pm Liberal Arts 4110', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Tue Apr 05 09:14:25 EDT 2011', 'Oscar winner Roger Ross Williams comes 2 TU April 6. See why he made history w/his film Music By Prudence. Lecture Hall 238 at 6:30pm', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Mon Apr 04 10:01:28 EDT 2011', 'Jazz at noon. 2moro 4/5 @ Cook Library. Music inspired by the boys of summer.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonUNews', 'Fri Apr 01 10:35:54 EDT 2011', 'Gregg Berstein rescheduled for 5/3/2011at 4PM. Location TBA.', '');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonTigerAD...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 16 18:52:11 EDT 2011', 'Big lax game tonight at Penn State.  Go Tigers!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 16 01:29:46 EDT 2011', 'RT @Towsonwomenslax: WLAX: #TowsonWomensLax has held opponents under 10 goals in last 4 games; Tigers have now won 6 of last 8 gms after ...', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 16 01:29:39 EDT 2011', 'RT @Towsonwomenslax: WLAX: Over the last 10 games, Jess Dunn of #TowsonWomensLax has scored 29 goals, including 4 goals vs 9th-ranked JM ...', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 16 01:29:30 EDT 2011', 'RT @Towsonwomenslax: WLAX: #TowsonWomensLax earns 2d win over a top-10 opponent in school history; The Tigers edged #8 Stanford last yea ...', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 16 01:29:21 EDT 2011', 'RT @TowsonTigers: WLAX: #TowsonWomensLax Rallies to Edge 9th-Ranked #JMUSports in OT, 10-9 (story/stats) -- http://bit.ly/h5lfJ4', 'http://bit.ly/h5lfJ4');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 13:47:47 EDT 2011', '@youraidiot No.  But you''re not all wet.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:58:15 EDT 2011', '#trust #character #foundation #compelled #OneTowson #believe #achieve', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:56:10 EDT 2011', 'The only way you rise up is by working together, as TEAM, all in, one goal, one heartbeat, TOGETHER. Been there, done this. Ready again now!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:52:48 EDT 2011', 'Hen is committed to laying an egg every day.  It''s a job, but no pain involved.  Pig is compelled by donating flesh to your plate = all in!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:50:57 EDT 2011', 'Five levels of involvement; resistant, reluctant, compliant, committed & compelled. We need compelled Tigers. Breakfast analogy perspective>', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:47:43 EDT 2011', 'Building a PROGRAM requires a strong foundation.  Whether you are talking 20 sports/department or 1 team the same basics apply, No settling!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Fri Apr 15 01:45:19 EDT 2011', '@EcaDnaK_SivaD Think water, wahoo, and your hint is clearly defined.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Thu Apr 14 22:19:57 EDT 2011', 'Hope to have a very positive announcement in the next few days... Something is long deserved and overdue around Towson... Stay tuned Wahoos', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Thu Apr 14 05:59:24 EDT 2011', '@bearcatPROUD Fairways and Greens!', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Thu Apr 14 05:58:56 EDT 2011', '@SarahRachael Looking forward to working with you!  #OneTowson', '');
@@ -57,22 +69,22 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Tue Apr 12 10:29:09 
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Tue Apr 12 10:29:05 EDT 2011', 'RT @TowerlightSprts: Towson men''s soccer alumni game and festivities scheduled for Sunday, May 1st.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Tue Apr 12 10:27:27 EDT 2011', 'RT @Under_Armour: The biggest, baddest internship on the planet has finally arrived! Only the brave and bold need apply => http://on. ...', 'http://on.');
 insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 21:20:31 EDT 2011', '@masnSteve  Doughty - the best and younger version of Brill', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:57:37 EDT 2011', 'Even back in the early 90''s you could still have media, coaches, & admins all having a good time together - not anymore in this tabloid age', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:53:09 EDT 2011', 'Memories will be running through my head all night - Ironically the best memory of all for Brill and the gang was Baltimore based - Tour ''92', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:52:05 EDT 2011', 'I miss the old guard of the ACC media... Bill Brill, Caulton Tudor, Larry Keech, Warren Swain, Jerry Ratcliffe, Steve Ellis, Ron Green Sr/Jr', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:50:42 EDT 2011', 'Early in my career on the media side Bill was quick to encourage me to be myself & not fall in line w/ what others thought. He was the best!', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:49:10 EDT 2011', 'I lost a good friend today in sportswriting legend Bill Brill.  He was integrity plus!  http://www.roanoke.com/news/breaking/wb/282962', 'http://www.roanoke.com/news/breaking/wb/282962');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 20:48:01 EDT 2011', 'RT @Under_Armour: The UA Team will be making a BIG announcement tomorrow. Get all the details on our Facebook Page tomorrow: http://on.f ...', 'http://on.f');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 16:17:50 EDT 2011', 'RT @TowerlightSprts: The women take a convincing 18-9 win over Hofstra. Senior Jess Dunn scored a game-high four goals.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sun Apr 10 07:38:35 EDT 2011', 'Towson dreams of following VCU, George Mason to NCAA glory - baltimoresun.com http://t.co/XaAMdn4', 'http://t.co/XaAMdn4');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 09 16:21:04 EDT 2011', '@jacckers Always hood to have a brisk morning run!', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 09 16:19:13 EDT 2011', 'RT @TheTowerlight: The @TowsonU Dance Team wins their 13th straight title in Daytona Beach. More on that story coming Monday.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 09 16:18:47 EDT 2011', 'RT @TowerlightSprts: Meredith Budner named CAA Swimmer of the year, and freshman Kaitlin Burke was named CAA Rookie Swimmer of the Year.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigerAD', 'Sat Apr 09 06:09:39 EDT 2011', 'RT @TowerlightSprts: Meredith Budner named CAA Swimmer of the year, while freshman Kaitlin Burke was named CAA Rookie Swimmer of the Year.', '');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonPatch...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 23:11:08 EDT 2011', '@OliviaObineme So do I!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 15:36:02 EDT 2011', 'The @Calverthall baseball team is breaking some school records. http://patch.com/A-gDmt', 'http://patch.com/A-gDmt');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 14:14:31 EDT 2011', 'Visit our friends at @ntbmore to rate your favorite stories from Towson Patch and more!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 10:36:32 EDT 2011', 'RT @MDSHA: I/L 695 at JFX-Jackknifed TT --all lanes closed.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 10:09:27 EDT 2011', '.@BCExKamenetz and BCPS superintendent sent a joint letter to state officials on #Stoneleigh ES expansion. http://patch.com/A-gDwt', 'http://patch.com/A-gDwt');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 09:56:55 EDT 2011', 'RT @mdrtraffic: Baltimore County : I-83 NORTH PAST TIMONIUM RD: Debris in roadway: I-83 NORTH PAST TIMONIUM RD NorthCreated:  4/15/2011  ...', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 08:19:36 EDT 2011', 'Brooks Robinson was discharged from GBMC yesterday. http://patch.com/A-gCV5', 'http://patch.com/A-gCV5');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 07:44:29 EDT 2011', 'Ever wonder what Towson looked like before Towson Circle? http://patch.com/A-gCbj', 'http://patch.com/A-gCbj');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 07:43:27 EDT 2011', 'Here''s what''s going on this weekend, courtesy @OliviaObineme: http://patch.com/A-gDkF', 'http://patch.com/A-gDkF');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 07:27:56 EDT 2011', '*yawn* Good morning Towson! Here''s what''s in the news: http://patch.com/A-gDd6', 'http://patch.com/A-gDd6');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 07:17:23 EDT 2011', '@DrSpaulding Thanks!', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Fri Apr 15 07:17:10 EDT 2011', 'RT @DrSpaulding: Love the #Patch iPhone app. Sleek and user friendly.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 22:09:23 EDT 2011', 'Brooks Robinson was released from GBMC today. http://patch.com/A-gCV5 (cc @gbmcmedia)', 'http://patch.com/A-gCV5');
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 21:22:04 EDT 2011', '. @GBMCMedia just released a statement from Brooks Robinson, who has just been released from the hospital. More coming in a while.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 19:22:57 EDT 2011', 'RT @TimoniumPatch: Through a Father''s Eyes: Remembering Cameron O''Neill-Mullin.  Find out about this amazing young person''s life http:// ...', 'http://');
@@ -81,22 +93,14 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 18:27:30 ED
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 15:36:15 EDT 2011', 'Just uploaded a video to my piece about the amazing rescue today: http://patch.com/A-gCkt', 'http://patch.com/A-gCkt');
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 14:57:14 EDT 2011', '@JulieSax check out our site for why', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 13:51:51 EDT 2011', 'Updated: Window washer gets trapped outside Towson high-rise http://patch.com/A-gCkt', 'http://patch.com/A-gCkt');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 10:27:57 EDT 2011', 'RT @brifar: The new @patch iPhone app is now avail in the Apple store! If u live in a Patch town, it''s a must have. Check it out!', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 10:12:28 EDT 2011', '.@BCoExKamenetz delivers first budget, @bpsears reports http://patch.com/A-gBGr #patch', 'http://patch.com/A-gBGr');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 09:12:46 EDT 2011', 'Great news everybody! #Patch has an iPhone app now! http://patch.com/A-gBN4', 'http://patch.com/A-gBN4');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Thu Apr 14 08:35:39 EDT 2011', 'The Towson library''s book sale starts today. http://patch.com/A-g8fZ', 'http://patch.com/A-g8fZ');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Wed Apr 13 19:36:00 EDT 2011', 'A Cromwell Valley Elem. student won a national contest for an essay on financial planning. http://patch.com/A-g9GS', 'http://patch.com/A-g9GS');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Wed Apr 13 12:08:19 EDT 2011', 'This week''s whiz kids came to America barely a year ago and are now stars of the #Dumbarton chess team. http://patch.com/A-g8Dl', 'http://patch.com/A-g8Dl');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Wed Apr 13 12:04:43 EDT 2011', 'Many Towson residents testified at a county redistricting meeting last night. http://patch.com/A-g9gt', 'http://patch.com/A-g9gt');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Tue Apr 12 19:48:21 EDT 2011', 'RT @bpsears: Lafferty, a Democrat, says redrawing towson lines is not about individual representation but about compactness #redistricting', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Tue Apr 12 19:31:46 EDT 2011', 'RT @bpsears: Cub Hill is in 3rd Dist. Carney 5th and parts of Parkville in 5th and 6th #redistricting', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Tue Apr 12 19:27:26 EDT 2011', 'The 5th district is represented by @david_s_marks, of Perry Hall. It stretches from there to Towson.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Tue Apr 12 19:26:42 EDT 2011', 'Via @bpsears, Towson residents are speaking at the meeting in favor of keeping the current 5th district intact.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonPatch', 'Tue Apr 12 19:23:06 EDT 2011', 'Interested in tonight''s redistricting hearing? @bpsears is live-tweeting.', '');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for UBTowsonMBA...
 
+insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 15 13:02:39 EDT 2011', 'Last chance for free #leadership #workshops - next week! http://bit.ly/eZZKnq', 'http://bit.ly/eZZKnq');
+insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 15 10:01:26 EDT 2011', '@SchulichMBA Thanks for the mention!  Happy Friday!', '');
+insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 15 10:00:31 EDT 2011', 'TU to host Sen. Cardin''s Health Care Career Expo http://bit.ly/htwjRG', 'http://bit.ly/htwjRG');
+insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 15 09:58:17 EDT 2011', 'RT @UB_Business: Great speech last night by President Jeffrey Lacker of the Federal Reserve Bank of Richmond. Read the speech here. http ...', '');
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Thu Apr 14 11:22:59 EDT 2011', 'Reminder: Towson University Is a Smoke-Free Campus http://bit.ly/gxfUjh', 'http://bit.ly/gxfUjh');
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Thu Apr 14 10:27:02 EDT 2011', 'RT @UB_Business: Check this video out -- UB / Towson #MBA Student Profile: Michael Sellitto http://t.co/p4q8Ymn via @youtube', 'http://t.co/p4q8Ymn');
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Thu Apr 14 09:50:19 EDT 2011', 'Interested in learning more about the UB/Towson #MBA? Join us on April 28 for our next On Campus Info. Session at TU. http://bit.ly/d2T82J', 'http://bit.ly/d2T82J');
@@ -113,14 +117,11 @@ insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Mon Apr 11 10:16:36 ED
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 08 13:39:23 EDT 2011', '@ki2mylife Thanks for the #FF mention!', '');
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 08 09:48:03 EDT 2011', 'RT @TowsonUNews: Dararius Irani on CNBC on crude prices and impact on biz decisions.', '');
 insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 08 09:47:28 EDT 2011', '#FF @UBGradAdmission @EubieBee @TUCollofBusEcon @TowsonUAlumni', '');
-insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 08 09:45:27 EDT 2011', 'An Evening With the Richmond Federal Reserve President, Jeffrey M. Lacker. http://bit.ly/g3lXp4', 'http://bit.ly/g3lXp4');
-insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Fri Apr 08 08:01:23 EDT 2011', 'MBA students with 6+ credits can begin registering for classes today!', '');
-insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Thu Apr 07 14:54:23 EDT 2011', 'GSA Boordy Vineyard Event  http://on.fb.me/fMn7tX', 'http://on.fb.me/fMn7tX');
-insert into dbo.TUTwitter values(NewID(), 'UBTowsonMBA', 'Thu Apr 07 12:07:13 EDT 2011', 'R.S.V.P. now for Community Service Day!  http://bit.ly/gLhC4s', 'http://bit.ly/gLhC4s');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonSGA...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Sun Apr 17 14:19:42 EDT 2011', 'RT @TowsonTigers: SB: Game 1 Final - Towson 13 GEorge Mason 0', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Thu Apr 14 13:29:22 EDT 2011', 'FREE RITAS AT THE BEACH! now!', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:37:51 EDT 2011', 'Tickets for TIGERFEST go on sale TOMORROW! $10.00 for TU students, $15.00 for non TU students @TowsonCAB', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:34:35 EDT 2011', 'RT @boyonsoul: Tickets for @Souldanceteam ''s dance extravaganza are on sale now at the TU box office :)', '');
@@ -140,11 +141,11 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:14:28 EDT 
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:09:59 EDT 2011', 'NPHC Stepshow on FRIDAY! Tcks are $10 at the box office. Doors open at 7, show starts at 8pm', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:09:16 EDT 2011', 'Its Greek Week! Good luck to everyone.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:06:57 EDT 2011', '4.20.11: Walk a Mile in Her Shoes; beginning at noon at Potomac Patio!', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonSGA', 'Tue Apr 12 17:06:00 EDT 2011', '4.30.11: Paintball Bus Trip in PA with @TowsonCAB student tcks= $22; nonstudent= $25', '');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonU...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Fri Apr 15 15:36:11 EDT 2011', 'Oh starry night: get a tour of TU''s planetarium. http://youtu.be/Hvoi7PrsAy8', 'http://youtu.be/Hvoi7PrsAy8');
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Wed Apr 13 16:18:26 EDT 2011', 'Be a part of the first TU music video. http://on.fb.me/fgoMEB', 'http://on.fb.me/fgoMEB');
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Tue Apr 12 12:08:18 EDT 2011', 'Everyone loves a crime dog. Yesterday, McGruff leads a TU safety walk in honor of national victims'' rights day.  http://yfrog.com/h4h83acj', 'http://yfrog.com/h4h83acj');
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Tue Apr 12 10:52:04 EDT 2011', 'Mahatma Ghandi''s grandson, Arun, will speak about non-violence on campus tonight. http://bit.ly/gAexLk', 'http://bit.ly/gAexLk');
@@ -164,7 +165,6 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Tue Mar 29 11:02:02 EDT 20
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Tue Mar 29 09:51:07 EDT 2011', 'Commuter students: join us from 5 -7 this evening for free dinner and prizes. http://bit.ly/dUudBB', 'http://bit.ly/dUudBB');
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Mon Mar 28 11:02:35 EDT 2011', 'Media activists, take note: TU''s 4th Annual Media Active Festival begins today. http://bit.ly/eEEdBw', 'http://bit.ly/eEEdBw');
 insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Mon Mar 28 10:52:01 EDT 2011', 'RT @TUinCommunity: @TowsonU students make a difference through Service Learning: http://www.gscnc.org/inclusiveness.html', 'http://www.gscnc.org/inclusiveness.html');
-insert into dbo.TUTwitter values(NewID(), 'TowsonU', 'Mon Mar 28 09:01:55 EDT 2011', 'Additional info about Marcia Welsh''s appointment as TU interim president: http://bit.ly/hJtCuj', 'http://bit.ly/hJtCuj');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TUCollofBusEcon...
@@ -193,6 +193,7 @@ insert into dbo.TUTwitter values(NewID(), 'TUCollofBusEcon', 'Thu Jan 06 09:20:0
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonUAlumni...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Fri Apr 15 12:12:26 EDT 2011', 'Go on a tour of the #TowsonU Planetarium! http://youtu.be/Hvoi7PrsAy8', 'http://youtu.be/Hvoi7PrsAy8');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Thu Apr 14 15:11:55 EDT 2011', 'RT @TowsonUNews: Watch WJZ at 4 & 6 today, 4/14. Covering concussions & DNA research. USA Today was here 2!', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Thu Apr 14 13:28:19 EDT 2011', 'RT @TowsonTigers: Athletics: Mike Hollis Joins #TowsonTigers Staff as Assistant A.D. for Fan Development (story) -- http://bit.ly/fhzv8l', 'http://bit.ly/fhzv8l');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Thu Apr 14 09:59:29 EDT 2011', 'The commencement scrolls have made their way into the Alumni Office this AM waiting to be handed out at graduation next month!', '');
@@ -212,11 +213,12 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Thu Mar 31 15:00:37 
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Thu Mar 31 12:46:01 EDT 2011', 'Alumni Hospitality Tent on 4/2 from 10:30am-12:30pm at the Auburn House before the Men''s Lax game vs. Hofstra! Make sure to stop by!', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Wed Mar 30 14:38:51 EDT 2011', 'RT @TowsonU: Great for kids & FREE: Albert Einstein gives interactive demos of his theory of relativity this Sat. http://bit.ly/aBiZDk', 'http://bit.ly/aBiZDk');
 insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Wed Mar 30 13:05:08 EDT 2011', 'CoSMIC Scholars Reach for the Stars: http://bit.ly/eDik0M', 'http://bit.ly/eDik0M');
-insert into dbo.TUTwitter values(NewID(), 'TowsonUAlumni', 'Wed Mar 30 11:03:15 EDT 2011', 'RT @TowsonTigers: WSOC: Tigers'' Annual Alumni Game and Reception Set for April 30 (story/registration link) -- http://bit.ly/f2XOKf', 'http://bit.ly/f2XOKf');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonGlobal...
 
+insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Fri Apr 15 09:05:47 EDT 2011', 'Make sure to RSVP to our Open House, Apr 28th! We''re excited to see YOU and award our competition winners, @hopeful_journey and @purebang', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Fri Apr 15 09:00:09 EDT 2011', 'PureBang Games and My Hopeful Journey Announced as the Winners of TowsonGlobal’s Business Plan Competition : http://t.co/v7Zeb6n', 'http://t.co/v7Zeb6n');
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Thu Apr 14 15:47:22 EDT 2011', 'RT @MD_Economist: Towson University''s Showcase was a success!  Thank you to all attendees and supporting partners for their support. @ME ...', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Thu Apr 14 15:42:02 EDT 2011', '@MD_Economist -not intentionally. People seek instant $ rather than being self-reliant and being risk takers. Fin Services offer this life..', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Thu Apr 14 15:32:45 EDT 2011', 'Congrats to @hopeful_journey and @purebang , you beat out the competition and won the first TG Business Plan Competition! Welcome to TG!', '');
@@ -235,8 +237,6 @@ insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Wed Mar 09 13:42:50 E
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Tue Mar 08 16:43:15 EST 2011', 'RT @StateStat: Are you a small business owner? Try our live chat assistance at choosemaryland.org and let us know how we can help.', '');
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Mon Mar 07 13:06:26 EST 2011', 'RT @SBAgov: Learn how the new tools&resources from the #Smallbiz Jobs Act can help you. Click http://go.usa.gov/4b6 for Jobs Act Tour sc ...', 'http://go.usa.gov/4b6');
 insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Fri Mar 04 15:41:35 EST 2011', 'RT @MDBiz: MD business investment grows 25% to $4B in 2010 http://t.co/vzmhb1w via @bizjournals', 'http://t.co/vzmhb1w');
-insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Tue Mar 01 10:55:42 EST 2011', 'RT @IncMagazine: It’s that time again! Check out the coolest college start-ups of 2011! http://ow.ly/45wM2', 'http://ow.ly/45wM2');
-insert into dbo.TUTwitter values(NewID(), 'TowsonGlobal', 'Mon Feb 28 14:56:09 EST 2011', 'Join TowsonGlobal at #DECO ''s 4th Annual Showcase: April 11, 2011! http://www.towson.edu/outreach/showcase/index.asp', 'http://www.towson.edu/outreach/showcase/index.asp');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TUinCommunity...
@@ -265,6 +265,7 @@ insert into dbo.TUTwitter values(NewID(), 'TUinCommunity', 'Mon Feb 21 15:36:01 
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TUOutreach...
 
+insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Fri Apr 15 08:31:31 EDT 2011', 'Thank You for Attending the 2011 Showcase http://conta.cc/hEue3O', 'http://conta.cc/hEue3O');
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Thu Apr 14 14:33:10 EDT 2011', 'People.Partners.Projects. Digest (3/31-4/14) http://conta.cc/fiBQ45', 'http://conta.cc/fiBQ45');
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Mon Apr 11 10:06:02 EDT 2011', 'Because Place Matters, Conference Edition: April 2011 http://conta.cc/fWXMSl via #constantcontact', 'http://conta.cc/fWXMSl');
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Wed Apr 06 09:21:33 EDT 2011', 'Last Chance to Register! http://conta.cc/fwkYVI', 'http://conta.cc/fwkYVI');
@@ -284,7 +285,6 @@ insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Tue Mar 01 15:15:26 EST
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Mon Feb 28 14:04:49 EST 2011', 'RT: TowsonUNews: Towson to offer master''s in supply chain management http://t.co/30VaWW7 via @bizjournals', 'http://t.co/30VaWW7');
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Mon Feb 28 11:39:47 EST 2011', 'Seats are going fast for the 2011 Showcase...we are up 75% on registrations based on this time last year!  http://bit.ly/tushowcase11', 'http://bit.ly/tushowcase11');
 insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Mon Feb 28 09:57:42 EST 2011', 'What was your favorite part of the 2011 EOC?  Missed it?--check out the wrap-up blog w/ presentation for download http://bit.ly/g3k8dr', 'http://bit.ly/g3k8dr');
-insert into dbo.TUTwitter values(NewID(), 'TUOutreach', 'Wed Feb 23 11:15:53 EST 2011', 'I''m getting excited for the 2011 Showcase!!!  Power of Networking #TUShowcase http://conta.cc/gxqQSB', 'http://conta.cc/gxqQSB');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for towsonstudent...
@@ -427,26 +427,26 @@ insert into dbo.TUTwitter values(NewID(), 'TUBlackboard', 'Thu Nov 12 10:48:56 E
 Showing next @TU users home timeline...wait few moments....
 Getting tweets for TowsonTigers...
 
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 21:15:29 EDT 2011', 'TENNIS: Tigers Fall at Delaware 5-2. Full story: http://bit.ly/gNT6PS', 'http://bit.ly/gNT6PS');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 21:14:47 EDT 2011', 'SB: Katie Lingmai strikes out a career-high 13 as Tigers split with Coppin State. Full story: http://bit.ly/h2UKkb', 'http://bit.ly/h2UKkb');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 18:36:10 EDT 2011', 'SB: Coppin State gets two runs in the top of the sixth to lead Tigers 2-0.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 18:29:56 EDT 2011', 'SB: Tigers and Coppin State still scoreless through five innings.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 18:03:49 EDT 2011', 'SB: Tigers and Coppin State are scoreless through three.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 17:45:58 EDT 2011', 'SB: Dominique Ortega keeps Coppin State off the board in the first two innings, Tigers coming to bat in the bottom of the second.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 17:33:28 EDT 2011', 'SB: Game two between Tigers and Coppin State  is underway. Live stats: http://bit.ly/dWhJll', 'http://bit.ly/dWhJll');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 17:14:30 EDT 2011', 'SB: Tigers take game-one 7-0 from Coppin State', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 16:54:46 EDT 2011', 'SB: Erika Stasch and Andrea Stevenson hit back-to-back home runs in the bottom of the fifth and the Tigers lead 7-0 over Coppin State.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 16:46:31 EDT 2011', 'SB: Katie Lingmai has a career-high 12 strikeouts through five innings and the Tigers lead Coppin State 4-0.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 16:38:10 EDT 2011', 'SB: Tigers score third in the bottom of the fourth and lead Coppin State 4-0.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 16:14:58 EDT 2011', 'SB: Kent''s sac fly scores Jillian Donnelly following her leadoff triple. Tigers lead 1-0 after three innings.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 15:48:36 EDT 2011', 'SB: Lingmai strikes out the side again in the second and we are still scoreless at softball.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 15:34:36 EDT 2011', 'SB: Lingmai strikes out the side in the first and now has 100+ strikeouts on the season.', '');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 15:30:30 EDT 2011', 'SB: Tigers host Coppin State in a doubleheader today. Live stats: http://bit.ly/hwW2qA', 'http://bit.ly/hwW2qA');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 15:03:01 EDT 2011', 'MLAX: #TowsonLacrosse Continues Push for #CAA Playoff Spot at Penn State on Saturday (preview/notes) -- http://bit.ly/icmIoR', 'http://bit.ly/icmIoR');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 13:30:58 EDT 2011', 'WLAX: #TowsonWomensLax Continues Road Trip This Weekend at 9th-ranked JMU, George Mason (preview/notes) -- http://bit.ly/i5FNQp', 'http://bit.ly/i5FNQp');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 13:24:47 EDT 2011', 'Athletics: Mike Hollis Joins #TowsonTigers Staff as Assistant A.D. for Fan Development (story) -- http://bit.ly/fhzv8l', 'http://bit.ly/fhzv8l');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 10:59:28 EDT 2011', 'MLAX: Peter Mezzanotte Can Do it All for #TowsonLacrosse (TigerWire Blog) -- http://bit.ly/ey3UKv', 'http://bit.ly/ey3UKv');
-insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Thu Apr 14 10:49:01 EDT 2011', 'FB: #TowsonTigers Enjoy Nice Weather for Practice #7 -- http://bit.ly/ibgzMe', 'http://bit.ly/ibgzMe');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 16:13:08 EDT 2011', 'BASE: Game 2 - FINAL:  Towson 4, Delaware 2 - Tigers sweep DH from Delaware', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 16:10:03 EDT 2011', 'SB: Game 2 Final: Towson 3 George Mason 2. Tigers sweep Patriots. More to come.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 16:02:58 EDT 2011', 'SB: Kent''s RBI single puts the Tigers up, 3-2. Bottom 6', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 15:47:27 EDT 2011', 'BASE - Towson 4, Delaware 2 - Bottom of 8th', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 15:43:53 EDT 2011', 'SB: Top of the 6th, here at the Towson Center. Tigers up, 2-1, over George Mason.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 15:26:33 EDT 2011', 'SB: Bottom 4, Tigers lead, 2-1.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 15:18:53 EDT 2011', 'BASE:  Game 2 - Towson 4, Delaware 2 - Bottom of 6th', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 15:16:39 EDT 2011', 'SB: Top of the 4th inning. Tigers lead, 2-0.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 14:51:53 EDT 2011', 'SB: DiPompo hits third homer of the day. Tigers lead, 2-0, in the bottom of the first', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 14:47:11 EDT 2011', 'BASE- Game 2 - Towson 3, Delaware 2 - top of 4th - Ulaky 2-run HR for Delaware', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 14:33:51 EDT 2011', 'BASE: Game 2 - Towson 3, Delaware 0 - top of 3rd inning', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 14:17:12 EDT 2011', 'SB: Game 1 Final - Towson 13 GEorge Mason 0', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:59:17 EDT 2011', 'BASE: Game 1 Final- Towson 3, Delaware 0 - Charlie Cononie pitches 3-hit SHO', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:56:00 EDT 2011', 'SB: Heading into the top of the 4th inning, Towson leads 13-0.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:54:34 EDT 2011', 'SB: Stevenson hits 2-run shot, Towson up, 13-0, over George Mason.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:52:55 EDT 2011', 'SB: DiPompo hits second 3-run homer of the game. Tigers now lead, 11-0', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:31:54 EDT 2011', 'SB: Sammi DiPompo''s 200th career hit is a 3-run homerun. Tigers now up, 5-0, in the bottom of the 2nd.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 13:26:07 EDT 2011', 'SB: Jill Donnelly hits first career homerun in bottom of the 2nd. Tigers lead, 2-0.', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 12:57:28 EDT 2011', 'BASE: Towson 3, Delaware 0 - Bottom of 5th - Andrew Parker hit 3-run HR for Towson in first', '');
+insert into dbo.TUTwitter values(NewID(), 'TowsonTigers', 'Sun Apr 17 12:25:21 EDT 2011', 'SB: Sun is shinning and the Tigers will get their doubleheader with George Mason in. Live stats here: http://bit.ly/935rqF', 'http://bit.ly/935rqF');
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Showing next @TU users home timeline...wait few moments....
 Sleeping iteration1
