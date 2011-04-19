@@ -35,7 +35,7 @@ public class TUTwitterFetcher3 {
        twitter = new TwitterFactory().getInstance();
        
        db = new DB();
-       db.dbConnect("jdbc:jtds:sqlserver://localhost:1433/TUUsersDB","sa","antarapal"); 
+       db.dbConnect("jdbc:sqlite:C:\\SQLite3BrowserDB\\TUUsersDB"," "," "); 
        
                 
        //  Check to make sure only a single file argument was provided

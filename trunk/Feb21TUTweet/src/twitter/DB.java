@@ -17,8 +17,8 @@ public class DB {
 	{
 		try
 		{
-			Class.forName("net.sourceforge.jtds.jdbc.Driver");
-	        conn = DriverManager.getConnection(TUUsersDB, sa, antarapal);
+			Class.forName("org.sqlite.JDBC");
+	        conn = DriverManager.getConnection("jdbc:sqlite:C:\\SQLite3BrowserDB\\TUUsersDB");
 	        System.out.println("connected");
 	        }
 		catch (Exception e)
@@ -42,11 +42,6 @@ public class DB {
 	        stmt.setEscapeProcessing(true);
 	        
 	        stmt.executeUpdate(cmd);
-	        
-	        
-	
-	        //stmt.executeUpdate("insert into cust_profile " +
-       // "values('name1', 'add1','city1','state1','country1')");
 	        stmt.close();
 	        
 	    }
