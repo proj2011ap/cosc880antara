@@ -35,7 +35,7 @@ public class TUTwitterFetcher3 {
        twitter = new TwitterFactory().getInstance();
        
        db = new DB();
-       db.dbConnect("jdbc:sqlite:C:\\SQLite3BrowserDB\\TUUsersDB"," "," "); 
+       db.dbConnect("jdbc:sqlite:C:\\Users\\Ayan\\Documents\\NetBeansProjects\\Rails_TU\\development.sqlite3"," "," "); 
        
                 
        //  Check to make sure only a single file argument was provided
