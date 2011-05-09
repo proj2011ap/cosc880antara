@@ -1,7 +1,6 @@
+TowsonTigers
 TheTowerlight
 TowsonUNews
-TowsonTigerAD
-TowsonPatch 
 UBTowsonMBA
 TowsonSGA 
 TowsonU 
@@ -17,4 +16,3 @@ TowsonStudioArt
 TowsonArtsClctv
 TUCampusRec
 TUBlackboard
-TowsonTigers

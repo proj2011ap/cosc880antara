@@ -12,6 +12,7 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.*;
+
 import twitter4j.*;
 
 public class TUTwitterFetcher3 {
@@ -24,7 +25,7 @@ public class TUTwitterFetcher3 {
     private static DB db;   
     
     private static String username;
-    private static String date;
+    private static Date date;
     private static String text;
     private static String address;
     
@@ -35,7 +36,7 @@ public class TUTwitterFetcher3 {
        twitter = new TwitterFactory().getInstance();
        
        db = new DB();
-       db.dbConnect("jdbc:sqlite:C:\\Users\\Ayan\\Documents\\NetBeansProjects\\Rails_TU\\development.sqlite3"," "," "); 
+       db.dbConnect("jdbc:sqlite:C:\\Users\\Ayan\\Documents\\NetBeansProjects\\TUTwitter_Web\\development.sqlite3"," "," "); 
        
                 
        //  Check to make sure only a single file argument was provided
@@ -179,11 +180,16 @@ public class TUTwitterFetcher3 {
                 	//String date;
                 	//String text;
                 	//String address;
+                
+                    /* TEXT as ISO8601 strings ("YYYY-MM-DD HH:MM:SS.SSS").
+                    * REAL as Julian day numbers, the number of days since noon in Greenwich on November 24, 4714 B.C. according to the proleptic Gregorian calendar.
+                    * INTEGER as Unix Time, the number of seconds since 1970-01-01 00:00:00 UTC. 
+                	*/
                 	
                 	if(status.getText().contains("http://"))
                 	{
                 		username = status.getUser().getScreenName();
-                		date = status.getCreatedAt().toString();
+                		date = status.getCreatedAt().;
                 		text = status.getText();
                 		address = getLink(status.getText());                		
                 		
@@ -192,7 +198,7 @@ public class TUTwitterFetcher3 {
                 	else
                 	{ 
                 		username = status.getUser().getScreenName();
-                		date = status.getCreatedAt().toString();
+                		date = (Date) status.getCreatedAt();
                 		text = status.getText();
                 		address = "";
                 	}
