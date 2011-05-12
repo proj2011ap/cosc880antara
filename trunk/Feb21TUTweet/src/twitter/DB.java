@@ -3,10 +3,8 @@ package twitter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
-import java.util.Date;
 import java.util.Calendar;
-
-import twitter4j.Status;
+import java.util.Date;
 
 public class DB {
 
@@ -34,11 +32,39 @@ public class DB {
 		c.setTime(d);
 
 		String s = "";
-		s = Integer.toString(c.get(c.YEAR)) + "-" + Integer.toString(c.get(c.MONTH)) + "-"
-			+ Integer.toString(c.get(c.DAY_OF_MONTH)) + " " + Integer.toString(c.get(c.HOUR_OF_DAY)) + ":"
-			+ Integer.toString(c.get(c.MINUTE)) + ":" + Integer.toString(c.get(c.SECOND)) + "."
-			+ Integer.toString(c.get(c.MILLISECOND));
 
+		// Get year
+		s = Integer.toString(c.get(c.YEAR)) + "-";
+
+		// Get month
+		if (c.get(c.MONTH) < 10)
+			s = s + "0" + Integer.toString(c.get(c.MONTH)) + "-";
+		else
+			s = s + Integer.toString(c.get(c.MONTH)) + "-";
+
+		// Get Day
+		if (c.get(c.DAY_OF_MONTH) < 10)
+			s = s + "0" + Integer.toString(c.get(c.DAY_OF_MONTH)) + " ";
+		else
+			s = s + Integer.toString(c.get(c.DAY_OF_MONTH)) + " ";
+
+		// Get Hour
+		if (c.get(c.HOUR_OF_DAY) < 10)
+			s = s + "0" + Integer.toString(c.get(c.HOUR_OF_DAY)) + ":";
+		else
+			s = s + Integer.toString(c.get(c.HOUR_OF_DAY)) + ":";
+
+		// Get Minute
+		if (c.get(c.MINUTE) < 10)
+			s = s + "0" + Integer.toString(c.get(c.MINUTE)) + ":";
+		else
+			s = s + Integer.toString(c.get(c.MINUTE)) + ":";
+
+		// Get Second
+		if (c.get(c.SECOND) < 10)
+			s = s + "0" + Integer.toString(c.get(c.SECOND)) + ".00";
+		else
+			s = s + Integer.toString(c.get(c.SECOND)) + ".00";
 
 		System.out.println("HERE: " + s);
 

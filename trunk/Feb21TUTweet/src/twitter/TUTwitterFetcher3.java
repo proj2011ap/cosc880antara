@@ -189,19 +189,9 @@ public class TUTwitterFetcher3 {
                 		text = status.getText();
                 		address = getLink(status.getText());
 
-                		//tweetsVector.addElement(results);
+                		db.insertData(username, date, text, address);
+                		tweetsVector.addElement(results);
                 	}
-                	else
-                	{
-                		username = status.getUser().getScreenName();
-                		date = (Date) status.getCreatedAt();
-                		text = status.getText();
-                		address = "";
-                	}
-
-                	db.insertData(username, date, text, address);
-            		tweetsVector.addElement(results);
-
                 }
 
            }
