@@ -99,4 +99,30 @@ public class DB {
 	    }
 	}	
 	
+	public void emptyData()
+	{
+		Statement stmt;
+	    try
+	    {
+	        stmt = conn.createStatement();
+	        
+	      //  text = text.replaceAll("'", "''");
+	       // text = text.replaceAll("'", " ");
+	        //int id = 0;
+	        String cmd = "delete from TUTwitter";
+
+	        System.out.println(cmd);
+	        stmt.setEscapeProcessing(true);
+
+	        stmt.executeUpdate(cmd);
+	        stmt.close();
+
+	    }
+	    catch (Exception e)
+	    {
+	        e.printStackTrace();
+
+	    }
+	}	
+	
 }
