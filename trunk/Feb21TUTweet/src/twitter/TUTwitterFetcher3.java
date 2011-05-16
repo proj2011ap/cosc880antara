@@ -51,6 +51,7 @@ public class TUTwitterFetcher3 {
                            try {
                                    System.out.println("Sleeping iteration" + i);
                                    Thread.sleep(43200000);//sleeps for 12 hrs
+                                 // Thread.sleep(120000); //sleeps 2 minutes                                  
                            } catch (InterruptedException e) {
                                    e.printStackTrace();
                            }
@@ -62,19 +63,20 @@ public class TUTwitterFetcher3 {
          *
          */
      private static void fetchUserTweets() {
-                for (int i = 0; i < feeds.size(); i++){
-
-                        fetchTweets((TUTwitterFeed) feeds.get(i));
+    	 db.emptyData(); // it empties the database every time the server runs
+    	 
+    	 for (int i = 0; i < feeds.size(); i++){
+    		 fetchTweets((TUTwitterFeed) feeds.get(i));
                    //     writeFile();
                      //   db.insertData(username, date, text, address);
                      // tweetsVector.clear();
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        System.out.println("Showing next @TU users home timeline...wait few moments....");
-                        try {
-                                Thread.sleep(300);
-                        } catch (InterruptedException e) {
-                                e.printStackTrace();
-                        }
+              System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+              System.out.println("Showing next @TU users home timeline...wait few moments....");
+              try {
+            	  Thread.sleep(300);
+            	  } catch (InterruptedException e) {
+            		  e.printStackTrace();
+            		  }
                 }
         }
 
