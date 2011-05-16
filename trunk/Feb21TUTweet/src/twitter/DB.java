@@ -38,9 +38,9 @@ public class DB {
 
 		// Get month
 		if (c.get(c.MONTH) < 10)
-			s = s + "0" + Integer.toString(c.get(c.MONTH)) + "-";
+			s = s + "0" + Integer.toString(c.get(c.MONTH)+1) + "-";
 		else
-			s = s + Integer.toString(c.get(c.MONTH)) + "-";
+			s = s + Integer.toString(c.get(c.MONTH)+1) + "-";
 
 		// Get Day
 		if (c.get(c.DAY_OF_MONTH) < 10)
@@ -79,6 +79,7 @@ public class DB {
 	    try
 	    {
 	        stmt = conn.createStatement();
+	        
 	        text = text.replaceAll("'", "''");
 	       // text = text.replaceAll("'", " ");
 	        int id = 0;
@@ -96,5 +97,6 @@ public class DB {
 	        e.printStackTrace();
 
 	    }
-	}
+	}	
+	
 }
