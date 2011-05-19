@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>TU Online News</title>
+<!-- START:stylesheet -->
+  <%= stylesheet_link_tag "TU", :media => "all" %><!-- <label id="code.slt"/> -->
+<!-- END:stylesheet -->
+</head>
+<body id="tu">
+  <div id="banner">
+    <table width="1100" border="0">
+    <tr>
+      <td colspan="2" align="middle">
+        
+      </td>
+    </tr>
+    </table>
+   <br/>
+
+  </div>
+  <div id="columns">
+    <div id="side">
+      
+    </div>
+    <div id="main">
+      <%= yield :layout %><!-- <label id="code.depot.e.include"/> -->
+
+    </div>
+  </div>
+</body>
+</html>
+

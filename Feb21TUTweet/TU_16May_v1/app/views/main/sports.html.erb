@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Towson University Online News</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+    	<h1 ALIGN=CENTER>Towson University Online News</h1>
+        <h2 ALIGN=CENTER><%= l Time.now, :format => :long %></h2>
+    </div>
+
+    <div id="navigation">
+    	<ul>
+          <li><%= link_to 'Home', :action => 'index' %></li>
+            <li><span><%= link_to 'Sports', :action => 'sports' %></span></li>            
+            <li><%= link_to 'News & Events', :action => 'othernews' %></li>
+
+        </ul>
+    </div>
+<br/>
+<table>
+  <% @records.each do |record| %>
+    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td>
+        <b><%= record.username %></b>
+      </td>
+
+      <td class="list-record">
+        <dl>
+          <dt>
+            <span class="timestamp">
+               Posted <%= time_ago_in_words(record.dateString) %> ago.
+            </span>
+          </dt>
+          <dt><%= record.text %></dt>
+          <dt><%= link_to 'Read more....', record.address %></dt>
+        </dl>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+     <div class="clear"></div>
+    </div>
+
+    <div id="footer">
+    	<p>&copy; YourSite 2010. Design by <a href="http://www.spyka.net">Free CSS Templates</a> | <a href="http://www.template4all.com">Free Web Templates</a> | <a href="http://www.freethemes4all.com">Freethemes4all.com</a></p>
+    </div>
+
+</body>
+<div style="position:absolute;left:-30000px;top:-30000px"><a href="http://www.template4all.com">Free Website templates</a><a href="http://www.freethemes4all.com">freethemes4all.com</a><a href="http://www.bestnewslinks.info">Last News</a><a href="http://freecmstemplates.blogspot.com">Free CMS Templates</a><a href="http://www.template4all.com/css/">Free CSS Templates</a><a href="http://www.videosfoot.info">Free Soccer Videos</a><a href="http://www.template4all.com/wordpress/">Free Wordpress Themes</a><a href="http://www.freethemes4all.com">Free Web Templates</a></div>
+</html>
