@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Towson University Online News</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+    	<h1 ALIGN=CENTER>Towson University Online News</h1>
+        <h2 ALIGN=CENTER><%= l Time.now, :format => :long %></h2>
+    </div>
+
+    <div id="navigation">
+    	<ul>
+          <li><%= link_to 'Home', :action => 'index' %></li>
+            <li><%= link_to 'Sports', :action => 'sports' %></li>
+            <li><%= link_to 'News & Events', :action => 'othernews' %></li>
+
+        </ul>
+    </div>
+
+    <div id="body">
+
+        <div class="sidebar sidebar-left">
+            <ul>
+                <li>
+                  <br/>
+                  <span class="timestamp">
+                     Next update at <%=  l Time.now + 12.hours, :format => :long %>
+                  </span>
+                    
+                    <ul>
+                      
+                    </ul>
+
+
+                </li>   
+
+                
+
+            </ul>
+        </div>
+
+        <div id="content">
+              <br/>
+        	<h2>TU Twitter Stories</h2>
+			<br/>
+                        <% for record in @records %>
+			<ul>                          
+                          <%=h record.text %><br/>
+                             <%= link_to 'Read more....', record.address %><br/>
+                             <span class="timestamp">
+                                Posted <%= time_ago_in_words(record.dateString) %> ago.
+                              </span>
+			</ul>
+                         <% end %>
+
+        </div>
+
+        <div class="sidebar sidebar-right">
+            <ul>
+                <li>                  
+                  
+                 <%= link_to( image_tag("Towerlight.jpg"), "http://twitter.com/#!/thetowerlight" )%>
+                 <%= link_to( image_tag("towsonunews.jpg"), "http://twitter.com/#!/TowsonUNews" )%>
+                  <%= link_to( image_tag("TowsonTigers.jpg"), "http://twitter.com/#!/towsontigers" )%>
+                  <%= link_to( image_tag("TowsonTigersAD.jpg"), "http://twitter.com/#!/towsontigerad" )%>
+                  <%= link_to( image_tag("UBTowsonMBA.jpg"), "http://twitter.com/#!/ubtowsonmba" )%>
+                  <%= link_to( image_tag("TowsonSGA.jpg"), "http://twitter.com/#!/TowsonSGA" )%>
+                  <%= link_to( image_tag("TowsonU.jpg"), "http://twitter.com/#!/towsonu" )%>
+                  <%= link_to( image_tag("TUCBE.jpg"), "http://twitter.com/#!/TUCollofBusEcon" )%>
+                  <%= link_to( image_tag("TUAlumni.jpg"), "http://twitter.com/#!/towsonualumni" )%>
+                  <%= link_to( image_tag("TowsonGlobal.jpg"), "http://twitter.com/#!/Towsonglobal" )%>
+                  <%= link_to( image_tag("TUCommunity.jpg"), "http://twitter.com/#!/TUinCommunity" )%>
+                  <%= link_to( image_tag("TUOutreach.jpg"), "http://twitter.com/#!/tuoutreach" )%>
+                  <%= link_to( image_tag("TowsonStudents.jpg"), "http://twitter.com/#!/towsonstudent" )%>
+                  <%= link_to( image_tag("TowsonBasketball.jpg"), "http://twitter.com/#!/TowsonMensBball" )%>
+                  <%= link_to( image_tag("TUBlackboard.jpg"), "http://twitter.com/#!/TUBlackboard" )%>
+                  <%= link_to( image_tag("TUMusic.jpg"), "http://twitter.com/#!/tumusic" )%>
+                  <%= link_to( image_tag("TowsonStudioArt.jpg"), "https://twitter.com/#!/TowsonStudioArt" )%>
+                  <%= link_to( image_tag("TowsonArtsClctv.jpg"), "http://twitter.com/#!/TowsonArtsClctv" )%>
+                  <%= link_to( image_tag("TUCampusRec.jpg"), "http://twitter.com/#!/TUCampusRec" )%>
+                 
+                </li>                
+
+            </ul>
+        </div>
+
+    	<div class="clear"></div>
+    </div>
+
+    <div id="footer">
+    	<p>&copy; YourSite 2010. Design by <a href="http://www.spyka.net">Free CSS Templates</a> | <a href="http://www.template4all.com">Free Web Templates</a> | <a href="http://www.freethemes4all.com">Freethemes4all.com</a></p>
+    </div>
+</div>
+</body>
+<div style="position:absolute;left:-30000px;top:-30000px"><a href="http://www.template4all.com">Free Website templates</a><a href="http://www.freethemes4all.com">freethemes4all.com</a><a href="http://www.bestnewslinks.info">Last News</a><a href="http://freecmstemplates.blogspot.com">Free CMS Templates</a><a href="http://www.template4all.com/css/">Free CSS Templates</a><a href="http://www.videosfoot.info">Free Soccer Videos</a><a href="http://www.template4all.com/wordpress/">Free Wordpress Themes</a><a href="http://www.freethemes4all.com">Free Web Templates</a></div>
+</html>
+
+
